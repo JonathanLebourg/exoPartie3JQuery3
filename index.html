@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 3 JQuery - Partie 3</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <script src="jquery-3.2.1.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="exercice">
+    <h1>Exercice 3 JQuery - Partie 3</h1>
+    <p>Construisez une page html avec un bouton et un champ texte.
+    </br>Le but est de trouver un nombre entre 0 et 100. A chaque réponse la page répond :
+  </br>
+  <ul>
+    <li>plus</li>
+    <li>moins</li>
+    <li>correcte</li>
+  </ul>
+Quand la réponse est trouvée, on obtiens le nombre d'essai que l'on a fait.</p>
+  </div>
+
+  <div class="exo">
+
+  <input id="result"></input><button id="button" value=1>Essayez</button>
+
+  </div>
+
+<script>
+var number = Math.floor(Math.random() * 101);
+$("#button").click(function(){
+  var answer = button.value;
+  console.log(number); //pour verifier le number
+   if (result.value < number){
+      button.value++;
+      alert("Plus");
+      } else {
+        if (result.value > number){
+           button.value++;
+           alert("Moins");
+           }
+           else{
+              alert("Vous avez trouvé en" + answer + " essais");}
+           }
+     })
+
+</script>
+</body>
+
+<footer>
+<p>Exercices réalisés à
+<a href="https://lamanu.fr/le-havre">LaManu</a></p>
+</footer>
+</html>
