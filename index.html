@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <meta charset="utf-8" />
   <title>Exercice 3 JQuery - Partie 3</title>
@@ -9,28 +9,25 @@
 </head>
 <body>
 
-  <div class="exercice">
+<div class="exercice">
     <h1>Exercice 3 JQuery - Partie 3</h1>
     <p>Construisez une page html avec un bouton et un champ texte.
     </br>Le but est de trouver un nombre entre 0 et 100. A chaque réponse la page répond :
-  </br>
-  <ul>
-    <li>plus</li>
-    <li>moins</li>
-    <li>correcte</li>
-  </ul>
-Quand la réponse est trouvée, on obtiens le nombre d'essai que l'on a fait.</p>
-  </div>
+    </br>
+    <ul>
+      <li>plus</li>
+      <li>moins</li>
+      <li>correcte</li>
+    </ul>
+    Quand la réponse est trouvée, on obtiens le nombre d'essai que l'on a fait.</p>
 
-  <div class="exo">
-
-  <input id="result"></input><button id="button" value=1>Essayez</button>
-
-  </div>
+ <div class="exo">
+    <input id="result"></input><button id="button" value=1>Essayez</button>
+ </div>
 
 <script>
-var number = Math.floor(Math.random() * 101);
-$("#button").click(function(){
+var number = Math.floor(Math.random() * 101); //génere le chiffre au hasard à decouvrir entre 0 et 100 compris
+  $("#button").click(function(){
   var answer = button.value;
   console.log(number); //pour verifier le number
    if (result.value < number){
@@ -42,9 +39,10 @@ $("#button").click(function(){
            alert("Moins");
            }
            else{
-              alert("Vous avez trouvé en" + answer + " essais");}
+              alert("Vous avez trouvé en " + answer + " essais");}
            }
      })
+
 
 </script>
 </body>
